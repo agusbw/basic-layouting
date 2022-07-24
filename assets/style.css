@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 30px;
+  color: #354259;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* !HEADER */
+header {
+  color: white;
+  display: inline;
+}
+
+nav {
+  padding: 22px 25px;
+  background-color: #354259;
+  position: sticky;
+  top: 0;
+  box-shadow: -1px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline;
+  padding: 0 7px;
+}
+
+nav ul {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu li {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+/* *HAMBURGER MENU*/
+.hamburger {
+  display: none;
+}
+
+.line {
+  display: block;
+}
+
+.line::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #ffff;
+  margin-bottom: 4px;
+  border-radius: 4px;
+}
+
+/* *HAMBURGER MENU END*/
+
+.jumbotron h1 {
+  margin-bottom: 25px;
+  color: #ffff;
+}
+
+.jumbotron {
+  background-color: #354259;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.jumbotron p {
+  font-weight: lighter;
+  width: 55%;
+  display: inline-block;
+  text-align: center;
+}
+
+.jumbotron a {
+  padding: 8px 25px;
+  font-weight: bold;
+  background-color: #ece5c7;
+  color: #354259;
+  margin: 20px auto 0 auto;
+  border-radius: 50px;
+  display: block;
+  transition: 0.3s all ease;
+  border: 1px solid #ece5c7;
+  text-decoration: none;
+  width: 120px;
+}
+
+.jumbotron a:hover {
+  background-color: #354259;
+  color: #ece5c7;
+  cursor: pointer;
+}
+/* !HEADER END*/
+
+/* !MAIN */
+#content {
+  float: left;
+  width: 75%;
+  padding: 20px 40px;
+}
+
+article {
+  color: #354259;
+  text-align: justify;
+}
+
+article h1 {
+  margin: 30px 0px;
+}
+
+/* *SERVICES CARD */
+.card-container {
+  display: flex;
+  overflow: auto;
+  padding: 10px 10px;
+}
+
+.card {
+  border-radius: 10px;
+  width: 250px;
+  transition: 0.1s all ease;
+  margin: 0px 35px 0px 0px;
+  flex-shrink: 0;
+  border: 1px solid #354259;
+  overflow: auto;
+}
+
+.card .img-container {
+  width: 100%;
+  background-color: #354259;
+  border-radius: 10px 10px 0px 0px;
+  padding: 25px 0px;
+  margin-bottom: 30px;
+}
+.card img {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+}
+
+.card p,
+a {
+  font-size: 14px;
+  margin: 20px 10px;
+}
+
+.card a {
+  float: right;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: -1px 1px 12px 2px rgba(0, 0, 0, 0.28);
+}
+
+/* *SERVICES CARD END*/
+
+#bali img {
+  width: 350px;
+  float: left;
+  padding: 0px 10px;
+}
+
+#bali {
+  overflow: auto;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  background-color: #fff4c3;
+  padding: 50px 20px 50px 20px;
+}
+
+main {
+  overflow: auto;
+}
+
+aside article {
+  text-align: center;
+  padding: 30px 0 30px 0;
+}
+
+aside article img {
+  border-radius: 170px;
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  margin: 30px 0;
+}
+/* !END MAIN */
+
+/* !TESTIMONI */
+#testimoni {
+  margin: 50px 0 80px 0;
+  text-align: center;
+}
+
+@keyframes append-animate {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.testimoni-card {
+  display: flex;
+  width: 600px;
+  background-color: #354259;
+  color: white;
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 10px;
+  gap: 20px;
+  position: relative;
+  animation: append-animate 6s linear;
+}
+
+#testimoni-text {
+  text-align: left;
+}
+
+#tester {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.testimoni-card .col img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+/* !TESTIMONI END*/
+
+/* !FOOTER */
+footer {
+  background-color: #354259;
+  padding: 50px 80px;
+  color: white;
+  display: flex;
+  gap: 30px;
+}
+
+footer li {
+  list-style-type: none;
+  margin-bottom: 6px;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer div {
+  padding-right: 100px;
+  border-right: 1px solid white;
+}
+
+/* !MEDIA QUERY */
+
+@media screen and (max-width: 700px) {
+  #bali img {
+    display: block;
+    margin: 0 auto;
+    float: none;
+    padding: 10px 0;
+  }
+
+  .testimoni-card {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+    width: 95%;
+  }
+
+  footer div {
+    padding-right: 10px;
+  }
+
+  footer {
+    padding: 20px 30px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* !HEADER*/
+  nav {
+    padding: 22px 0px;
+  }
+  nav a {
+    font-size: 14px;
+  }
+  nav li {
+    padding: 0 3px;
+  }
+
+  .jumbotron {
+    padding: 10% 0;
+  }
+
+  .jumbotron p {
+    width: 95%;
+  }
+  /* !HEADER END*/
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+  }
+
+  #bali img {
+    width: 270px;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: 25px;
+  }
+
+  .mobile-menu {
+    display: block;
+    width: 200px;
+    position: absolute;
+    transform: translateX(-200px);
+    transition: 1s all ease;
+    background-color: #354259;
+  }
+
+  .open {
+    transform: translateX(0);
+    transition: 1s all ease;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  #content {
+    padding: 10px 30px;
+  }
+}
